@@ -7,6 +7,72 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .project-card {
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        .project-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .tech-tag {
+            display: inline-block;
+            background-color: #e0e0ff;
+            border: 2px solid #7e57c2;
+            border-radius: 8px;
+            padding: 5px 10px;
+            margin: 4px;
+            font-weight: 500;
+        }
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .course-item {
+            background-color: #e8f0fe;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        .feedbackSection form {
+            max-width: 600px;
+            margin: auto;
+            background: #f5f5ff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .feedbackSection label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .feedbackSection input,
+        .feedbackSection textarea,
+        .feedbackSection select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .feedbackSection button {
+            background-color: #7e57c2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .project-card h3 {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -37,16 +103,16 @@
                 </p>
                 <div class="social-icons">
                     <a href="https://linkedin.com/in/aditya-gupta-a0b30831b" target="_blank">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="30" height="30">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30" height="30">
                     </a>
                     <a href="https://github.com/adit087" target="_blank">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="30" height="30">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="30" height="30">
                     </a>
                     <a href="mailto:aditya.ai0611@gmail.com">
                         <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" width="30" height="30">
                     </a>
                     <a href="https://www.instagram.com/" target="_blank">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="30" height="30">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" width="30" height="30">
                     </a>
                 </div>
                 <div class="buttons">
@@ -77,46 +143,36 @@
             <div class="projects-container">
                 <div class="project-card">
                     <h3>Stocks Trading Tools</h3>
+                    <div class="project-image">
+                        <img src="https://source.unsplash.com/800x400/?stock,market" alt="Stocks">
+                    </div>
                     <p>Developed tools to analyze technical indicators and backtest stock strategies. Automated trading system using broker APIs and Python scripting.</p>
-                    <p><strong>Tech:</strong> Python, Pandas, Matplotlib, Broker API</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Matplotlib</span>
+                        <span class="tech-tag">Broker API</span>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h3>Bank Management System</h3>
-                    <p>Created a basic C program for user banking operations like deposit, withdraw, transaction history, and user account validation.</p>
-                    <p><strong>Tech:</strong> C, File Handling, Command Line</p>
-                </div>
-                <div class="project-card">
-                    <h3>AI Stand-Up Comedy Project</h3>
-                    <p>Creating lifelike 3D avatars for stand-up comedy using Unity, ML-Agents, DeepMotion, and Blender. Goal: simulate human-like humor & stage presence.</p>
-                    <p><strong>Tech:</strong> Unity, DeepMotion, Omniverse, Blender, Mixamo</p>
-                </div>
-                <div class="project-card">
-                    <h3>Movie Promotion Automation Hub</h3>
-                    <p>Script-based tool to automatically collect, analyze, and upload video content to platforms like YouTube, Instagram, and Snapchat using APIs.</p>
-                    <p><strong>Tech:</strong> YouTube API, NoteGPT, Gemini Prompts, Telegram/Discord Bots</p>
-                </div>
-                <div class="project-card">
-                    <h3>12 Apps in 1 Day Challenge</h3>
-                    <p>Built 12 mini tools and web apps in a single day — showcasing rapid development, MVP mindset, and time-boxed problem solving.</p>
-                    <p><strong>Tech:</strong> HTML, CSS, JS, Python, Bash</p>
-                </div>
-                <div class="project-card">
-                    <h3>Image Quality Enhancer Automation</h3>
-                    <p>Automated process to convert low-resolution images into high-quality outputs using Photoshop and AI image tools.</p>
-                    <p><strong>Tech:</strong> Photoshop, Topaz Gigapixel AI, Topaz DeNoise AI, ON1 Resize AI</p>
-                </div>
+                <!-- Add other projects similarly with image + tags -->
             </div>
         </section>
 
         <section class="coursesSection" id="courses">
             <h2>Courses Undertaken</h2>
             <div class="courses-grid">
-                <div class="course-item">Python Programming</div>
-                <div class="course-item">Data Structures & Algorithms</div>
-                <div class="course-item">Artificial Intelligence</div>
-                <div class="course-item">Operating Systems</div>
-                <div class="course-item">Database Management</div>
-                <div class="course-item">Machine Learning Basics</div>
+                <div class="course-item">Prompt Engineering</div>
+                <div class="course-item">Computer Vision</div>
+                <div class="course-item">Data Visualization</div>
+                <div class="course-item">Backend API Development</div>
+                <div class="course-item">App Automation (Selenium/Playwright)</div>
+                <div class="course-item">Git & GitHub for Developers</div>
+                <div class="course-item">Cloud Fundamentals (AWS/GCP)</div>
+                <div class="course-item">Cybersecurity Basics + Bug Bounty</div>
+                <div class="course-item">Smart Contract Development (Solidity)</div>
+                <div class="course-item">LLM App Development (LangChain/RAG)</div>
+                <div class="course-item">Database Design & SQL</div>
+                <div class="course-item">Unity + AI Agents for AR/VR</div>
             </div>
         </section>
 
