@@ -1,133 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aditya Gupta | Portfolio</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-    header {
-      background-color: #111827;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    td, th {
-      padding: 0.5rem;
-      border-bottom: 1px solid #ddd;
-    }
-    a {
-      color: #0366d6;
-      text-decoration: none;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #eaeaea;
-      margin-top: 2rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Aditya Gupta</h1>
-    <p>B.Tech CSE (AIML) | Aspiring Innovator | Automation Enthusiast</p>
-    <p>
-      📞 7017406835 |
-      📧 <a href="mailto:aditya.ai0611@gmail.com">aditya.ai0611@gmail.com</a> |
-      <a href="https://linkedin.com/in/aditya-gupta-a0b30831b" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/adit087" target="_blank">GitHub</a> |
-      <a href="https://adityaaizero.github.io" target="_blank">Portfolio</a>
-    </p>
-  </header>
-  <main>
-    <section>
-      <h2>Career Objective</h2>
-      <p>A self-driven and curious learner, currently pursuing B.Tech in CSE with AIML specialization, passionate about automating systems and building intelligent solutions.</p>
-    </section>
+    <header>
+        <nav>
+            <div class="left">Aditya's Portfolio</div>
+            <div class="right">
+                <div class="hamburger" id="hamburger">&#9776;</div>
+                <ul id="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="aboutSection" id="about">
+            <div class="leftSection">
+                <h1>About Me</h1>
+                <p>
+                    Hi, I'm Aditya Gupta, a B.Tech student in CSE (AIML) from Maharaja Agrasen Institute of Technology. I am passionate about automation, AI, systems engineering, and building intelligent tools that simplify life.
+                </p>
+                <p>
+                    Outside of academics, I love dancing (especially to "Chaiyya Chaiyya"), writing shayari, exploring tech innovations, and working on unique side projects. I enjoy playful conversations, meme culture, and continuous self-growth.
+                </p>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/aditya-gupta-a0b30831b" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/adit087" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:aditya.ai0611@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="buttons">
+                    <button class="btn" onclick="window.open('/resume.pdf', '_blank')">
+                        Download Resume
+                    </button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="profile.png" alt="Profile Photo">
+            </div>
+        </section>
 
-    <section>
-      <h2>Education</h2>
-      <table>
-        <tr><th>Degree</th><th>Institution</th><th>Year</th><th>CGPA</th></tr>
-        <tr><td>B.Tech (CSE AIML)</td><td>Maharaja Agrasen Institute Of Technology</td><td>2024-28</td><td>7.0</td></tr>
-        <tr><td>12th</td><td>Kids Corner Happy Sr. Sec. School</td><td>2022</td><td>8.5</td></tr>
-        <tr><td>10th</td><td>Same as above</td><td>2020</td><td>8.5</td></tr>
-      </table>
-    </section>
+        <section class="experienceSection" id="experience">
+            <h2>Experience</h2>
+            <div class="experience-card">
+                <div class="experience-title">PR, Marketing, Graphic Design, Social Media</div>
+                <div class="experience-company">Pehchaan NGO</div>
+                <div class="experience-date">Jan 2024 - Mar 2024</div>
+                <div class="experience-description">
+                    Worked on digital presence, social campaign content, promotional banners, and public engagement through social media for NGO impact expansion.
+                </div>
+            </div>
+        </section>
 
-    <section>
-      <h2>Programming Languages</h2>
-      <p>Python, HTML, CSS, JavaScript, SQL, C, C++, Selenium, Playwright</p>
-    </section>
+        <section class="projectsSection" id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/trading.png" alt="Stocks Trading Tool">
+                    </div>
+                    <div class="project-content">
+                        <h3>Stocks Trading Tools</h3>
+                        <p>Developed tools to analyze technical indicators and backtest stock strategies. Automated trading system using broker APIs and Python scripting.</p>
+                        <div class="tech-stack">
+                            <p>Technologies used:</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">Matplotlib</span>
+                                <span class="tech-tag">Broker API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <section>
-      <h2>Tools & Technologies</h2>
-      <p>Photoshop, Topaz Suite, AfterEffects, CorelDraw, ON1 Resize AI, Gmail API, Gemini API</p>
-    </section>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/banking.png" alt="Bank Management">
+                    </div>
+                    <div class="project-content">
+                        <h3>Bank Management System</h3>
+                        <p>Created a basic C program for user banking operations like deposit, withdraw, transaction history, and user account validation.</p>
+                        <div class="tech-stack">
+                            <p>Technologies used:</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">C</span>
+                                <span class="tech-tag">File Handling</span>
+                                <span class="tech-tag">Command Line</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section>
-      <h2>Projects</h2>
-      <p><strong>Stocks Trading Tools</strong> — [Details coming soon...]</p>
-      <p><strong>Project 2</strong> — [Placeholder project description here]</p>
-    </section>
+        <section class="coursesSection" id="courses">
+            <h2>Courses Undertaken</h2>
+            <div class="courses-grid">
+                <div class="course-item">Python Programming</div>
+                <div class="course-item">Data Structures & Algorithms</div>
+                <div class="course-item">Artificial Intelligence</div>
+                <div class="course-item">Operating Systems</div>
+                <div class="course-item">Database Management</div>
+                <div class="course-item">Machine Learning Basics</div>
+            </div>
+        </section>
 
-    <section>
-      <h2>Internship Experience</h2>
-      <p><strong>PR, Marketing, Graphic Design, Social Media</strong> at Pehchaan NGO (3 Months)</p>
-    </section>
-
-    <section>
-      <h2>Achievements</h2>
-      <ul>
-        <li>JEE Mains Rank: 5600</li>
-        <li>SOF Olympiad Participant</li>
-        <li>Hindustan Olympiad Participant</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Extracurricular Activities</h2>
-      <ul>
-        <li>Dancing (Performed in school functions)</li>
-        <li>Acting (College fest)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Languages Known</h2>
-      <p>Hindi, English</p>
-    </section>
-
-    <section>
-      <h2>Interests</h2>
-      <p>Dancing, Acting, Writing Shayari & Jokes</p>
-    </section>
-  </main>
-  <footer>
-    <p>© 2025 Aditya Gupta. Built with ❤️ and passion for automation.</p>
-  </footer>
+        <footer>
+            <div class="email">
+                <a href="mailto:aditya.ai0611@gmail.com">aditya.ai0611@gmail.com</a>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>
