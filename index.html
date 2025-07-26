@@ -301,6 +301,94 @@
             border: 1px solid #e0e0e0;
         }
 
+        /* Ongoing Projects Section */
+        .ongoingSection {
+            padding: 4rem 0;
+            background: #ffffff;
+            border-radius: 10px;
+            margin: 2rem 0;
+            padding: 3rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e0e0e0;
+        }
+
+        .ongoingSection h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            color: #333;
+        }
+
+        .ongoing-note {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 1rem;
+            background: #fff3cd;
+            color: #856404;
+            border-radius: 8px;
+            border: 1px solid #ffeaa7;
+            font-weight: 500;
+        }
+
+        .ongoing-card {
+            position: relative;
+            border: 2px solid #ffeaa7;
+        }
+
+        .ongoing-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #ff6b35;
+            color: white;
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            z-index: 10;
+        }
+
+        .project-status {
+            margin-bottom: 1rem;
+        }
+
+        .status-badge {
+            background: #28a745;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .project-progress {
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #28a745, #20c997);
+            transition: width 0.3s ease;
+        }
+
+        .progress-text {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #333;
+            min-width: 80px;
+        }
+
         /* Courses Section */
         .coursesSection {
             padding: 4rem 0;
@@ -659,19 +747,37 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="project-card">
+        <section class="ongoingSection" id="ongoing">
+            <h2>Ongoing Projects</h2>
+            <div class="ongoing-note">
+                <p>🚀 Currently working on these exciting projects - Stay tuned for updates!</p>
+            </div>
+            <div class="projects-container">
+                <div class="project-card ongoing-card">
                     <div class="project-image">
+                        <div class="ongoing-badge">IN PROGRESS</div>
                         🤖
                     </div>
                     <div class="project-content">
                         <h3>LLM AI Suite</h3>
+                        <div class="project-status">
+                            <span class="status-badge">Active Development</span>
+                        </div>
                         <div class="tech-tags">
                             <span class="tech-tag">CloudWeaver</span>
                             <span class="tech-tag">Totogpt Core</span>
                             <span class="tech-tag">ParaMind AI</span>
                             <span class="tech-tag">FreeStack AI</span>
                             <span class="tech-tag">LocalStorm</span>
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                            <span class="progress-text">75% Complete</span>
                         </div>
                     </div>
                 </div>
