@@ -460,16 +460,7 @@ label {
     color: green;
     margin-top: 10px;
 }
-.ongoing-btn {
-    background-color: #ff9800;
-    color: white;
-    border: none;
-    padding: 4px 8px;
-    font-size: 0.8rem;
-    border-radius: 12px;
-    cursor: default;
-    margin-left: 10px;
-}
+
 
 
 
